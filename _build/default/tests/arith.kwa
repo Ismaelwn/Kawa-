@@ -1,0 +1,16 @@
+main {
+print( 17 - 0);
+//le resultat doit etre 17
+print( 16/ 2);
+//le resultat doit etre 8
+print( 6 *4);
+//le resultat doit etre 24
+print( 0 *9);
+//le resultat doit etre 0
+print( 3 - 20);
+//le resultat doit etre -17
+
+
+
+
+}

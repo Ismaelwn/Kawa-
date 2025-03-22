@@ -1,0 +1,40 @@
+var point a;
+var point b;
+
+var personne p1;
+var personne p2;
+
+class point {
+  attribute int x;
+  attribute int y;
+}
+
+class personne {
+  attribute int pd;
+  attribute int h;
+}
+
+
+main {
+  a = new point;
+  b = new point;
+  p1 = new personne;
+  p2 = new personne;
+
+  p1.pd = 65;
+  p1.h = 188;
+
+  p2.pd = 48;
+  p2.h = 145;
+  a.x = 1;
+  a.y = 2;
+  b.x = 3;
+  b.y = 4;
+  print(a.x + a.y + b.x + b.y);
+  print(p2.pd + p1.pd);
+  // 113
+  print(p1.h / p2.h ); 
+  // 1
+  
+}
+

@@ -1,0 +1,37 @@
+var point p;
+var distance s;
+
+class point {
+  attribute int x;
+  attribute int y;
+}
+
+class distance {
+  attribute int a;
+  attribute int b;
+}
+
+main {
+  p = new point;
+  p.x = 1;
+  p.y = 2;
+  s = new distance;
+  s.a = 3;
+  s.b = 4;
+
+
+
+  if (s instanceof distance) { print(1); } else { print(0); }  
+  // doit imprimer 1
+  if (p instanceof point) { print(1); } else { print(0); }  
+  // doit  imprimer 1
+  
+
+  if (p instanceof int) { print(1); } else { print(0); }  
+  // doit  imprimer 0
+  if (p instanceof distance) { print(1); } else { print(0); }  
+  // doit  imprimer 0
+  if (s instanceof point) { print(1); } else { print(0); }  
+  // doit  imprimer 0
+  
+}

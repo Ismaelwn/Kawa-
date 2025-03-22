@@ -1,0 +1,19 @@
+var int x;
+var int y;
+var int result;
+
+main {
+  x = 2;
+  y = 3;
+  result = 1;
+
+  while (y != 0) {
+    if (y % 2 != 0) { result = x * result;} else {}
+    x = x * x;
+    y = y / 2;
+  }
+
+  print(result); // Affiche 8 (2^3)
+}
+
+

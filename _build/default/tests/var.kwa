@@ -1,0 +1,11 @@
+var int x;
+var int y;
+
+main {
+  x = 3;
+  y = 7;
+  x = x+2;
+  y = y*(x+6);
+  print(y);
+  //affiche 77
+}

@@ -1,0 +1,50 @@
+var point a;
+var point b;
+var point c;
+var rectangle rect;
+
+class point {
+  attribute int x;
+  attribute int y;
+}
+
+class segment {
+  attribute int a;
+  attribute int b;
+}
+
+class rectangle {
+  attribute int length;
+  attribute int width;
+  attribute int height;
+}
+
+main {
+  a = new point;
+  a.x = 1;
+  a.y = 2;
+  b = new point;
+  b.x = 1;
+  b.y = 2;
+  c = new point;
+  c.x = 3;
+  c.y = 2;
+
+  if (a === b) { print(1); } else { print(0); }
+  if (a.x === a.y) { print(1); } else { print(0); }
+  if (a =/= b) { print(1); } else { print(0); }
+  if (b === a) { print(1); } else { print(0); }
+  if (a =/= c) { print(1); } else { print(0); }
+  if (a.x =/= a.y) { print(1); } else { print(0); }
+  if (a === c) { print(1); } else { print(0); }
+
+ 
+  
+  rect = new rectangle;
+  rect.length = 5;
+  rect.width = 3;
+  rect.height = 2;
+  print(rect.length + rect.width + rect.height); // Affiche 10
+  if (rect.length > rect.width) { print(1); } else { print(0); } // Affiche 1
+}
+

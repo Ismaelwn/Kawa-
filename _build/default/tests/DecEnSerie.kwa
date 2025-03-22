@@ -1,0 +1,12 @@
+var int a, b, c;
+
+main{
+    a = 1;
+    b = 2;
+    c = 3;
+    c=c*2;
+    print(a);
+    print(b);
+    print(c );
+    //affiche 1 ensuite 2 ensuite 6
+}

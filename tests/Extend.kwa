@@ -1,0 +1,76 @@
+var paire a;
+var paire b;
+var triple c;
+var quadruple d;
+
+class paire {
+  attribute int x;
+  attribute int y;
+
+  method void constructor(int x, int y) {
+    this.x = x;
+    this.y = y;
+  }
+
+  method int somme() {
+    return this.x + this.y;
+  }
+
+  method int produit() {
+    return this.x *this.y;
+  }
+}
+
+class triple extends paire {
+  attribute int z;
+
+  method void constructor(int x, int y, int z) {
+    this.x = x;
+    this.y = y;
+    this.z = z;
+  }
+
+  method int somme() {
+    return this.x + this.y + this.z;
+  }
+
+  method int produit() {
+    return this.x * this.y * this.z;
+  }
+}
+
+class quadruple extends triple {
+  attribute int w;
+
+  method void constructor(int x, int y, int z, int w) {
+    this.x = x;
+    this.y = y;
+    this.z = z;
+    this.w = w;
+  }
+
+  method int somme() {
+    return this.x + this.y + this.z + this.w;
+  }
+
+  method int produit() {
+    return this.x * this.y * this.z * this.w;
+  }
+}
+
+main {
+  a = new paire(1, 2);
+  b = new triple(3, 4, 5);
+  c = new quadruple(1, 2, 3, 4);
+
+  print(b.produit()); 
+  // Affiche 60
+  print(a.somme());   
+  // Affiche 3
+  print(c.somme());   
+  // Affiche 10
+  print(c.produit()); 
+  // Affiche 24
+  print(b.somme());   
+  // Affiche 12
+}
