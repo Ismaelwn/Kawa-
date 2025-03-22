@@ -12,7 +12,7 @@ Le projet **Kawa** vise à développer un **interprète** pour un langage de pro
 
 1. **Cloner le dépôt** :
    ```bash
-   git clone https://github.com/Ismaelwn/KawaInterpreter.git
+   git clone https://github.com/Ismaelwn/Kawa.git
    ```
 2. **Exécuter les tests** :
    ```bash
